@@ -1,7 +1,6 @@
 import { DashboardService } from './../dashboard.service';
 import { Component, OnInit } from '@angular/core';
 import Stock from 'src/app/shared/models/stock-model';
-import { LEADING_TRIVIA_CHARS } from '@angular/compiler/src/render3/view/template';
 
 @Component({
   selector: 'app-dashboard-page',
