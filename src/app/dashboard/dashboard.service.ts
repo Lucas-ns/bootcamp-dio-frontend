@@ -7,13 +7,12 @@ import Stock from '../shared/models/stock-model';
 })
 export class DashboardService {
 
-  // readonly baseUrl = 'https://bootcampsantander-dio.herokuapp.com/bootcamp'
-  baseUrl = 'http://localhost:8080/bootcamp'
+  readonly baseUrl = 'https://bootcamp-dio-backend.onrender.com/api'
 
   constructor(private http: HttpClient) { }
 
   async getStocks(): Promise<Stock[]> {
-    return this.http.get<Stock[]>(`${this.baseUrl}/stock`).toPromise();
+    return this.http.get<Stock[]>(`${this.baseUrl}/stocks`).toPromise();
   }
 
 }
